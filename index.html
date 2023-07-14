@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recherche d'utilisateurs</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="side-nav">
+      <a class="nav-logo" href="#">
+        <img src="/images/logo.svg" alt="logo" />
+        <h1>Users</h1>
+      </a>
+      <a href="#" class="nav-bloc">
+        <img src="/images/dashboard.svg" alt="dashboard" />
+        <span class="nav-link">Dashboard</span>
+      </a>
+      <a href="#" class="nav-bloc">
+        <img src="/images/speech-bubble.svg" alt="speech bubble" />
+        <span class="nav-link">Messenger</span>
+      </a>
+      <a href="#" class="nav-bloc active">
+        <img src="/images/server.svg" alt="database" />
+        <span class="nav-link">Database</span>
+      </a>
+      <a href="#" class="nav-bloc">
+        <img src="/images/calendar.svg" alt="calendar" />
+        <span class="nav-link">Calendar</span>
+      </a>
+    </nav>
+
+    <main class="main-container">
+      <div class="input-container">
+        <label for="search-input">
+          <img src="/images/search.svg" alt="search" />
+        </label>
+        <input
+          type="search"
+          name="search-input"
+          id="search-input"
+          placeholder="Search for an user"
+        />
+      </div>
+      <h2>Database Results</h2>
+      <ul class="table-title">
+        <li class="title-item">Name</li>
+        <li class="title-item">Email</li>
+        <li class="title-item">Phone</li>
+      </ul>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
